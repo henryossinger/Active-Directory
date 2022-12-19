@@ -42,7 +42,7 @@ First, we create 2 azure Virtual Machines: The Domain Controller and the User. F
 <p>
 <h2>2. Ensuring Connectivity between the Client and Domain Controller</h2>
 
-To check connectivity simply ping the DC's private IP. By default, Windows Server has echo requests from ICMPv4 blocked in the firewall, meaning the pings are going to drop. To change this we use RDP to open the DC's VM and change these settings in the windows firewall. Now when we ping the DC's private IP we see responses. 
+To check connectivity simply ping the DC's private IP. By default, Windows Server has echo requests from ICMPv4 blocked in the firewall, meaning the pings are going to drop. To change this we use RDP to open the DC's VM and change these settings in the windows firewall. Now when we ping the DC's private IP we see responses ensuring our connect is good. 
 </p>
 <br />
 
@@ -50,4 +50,7 @@ To check connectivity simply ping the DC's private IP. By default, Windows Serve
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<h2>
+<h2>3. Installing Active Directory on the DC</h2>
+
+Open server manager on the DC (comes default on Windows Server). Head to add roles and features too add Windows Domain Controller. From here we head to the 
+flag in the top right to continue configuring the domain. The domain I set is testdomain.com, this is private so it can be set to anything. After going through the installation process the VM must be restarted. Now that it is a domain controller, we must login with the context of the domain (FQD). 
