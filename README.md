@@ -27,7 +27,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<h2>1. Setting up the VM's in Azure</h2>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
@@ -36,3 +35,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 First, we create 2 azure Virtual Machines: The Domain Controller and the User. For the domain controller use Windows Server 2022 image, and for the user use Windows 10 image. Both of the VM's are put in the same virtual network named DC. The domain controller's NIC IP address is set to static 
 </p>
 <br />
+
+<p> 
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<h2>2. Ensuring Connectivity between the Client and Domain Controller</h2>
+
+To check connectivity simply ping the DC's private IP. By default, Windows Server has echo requests from ICMPv4 blocked in the firewall, meaning the pings are going to drop. To change this we use RDP to open the DC's VM and change these settings in the windows firewall. Now when we ping the DC's private IP we see responses. 
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<h2>
