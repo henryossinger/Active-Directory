@@ -19,12 +19,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup the VM's in Azure
+- Install Active Directory
+- Create Admin/User Accounts in AD
+- Configure AD for Admin/Users 
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
+<<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<h2> 1. Setting up the VM's in Azure
+First, we create 2 azure Virtual Machines: The Domain Controller and the User. For the domain controller use Windows Server 2022 image, and for the user use Windows 10 image. Both of the VM's are put in the same virtual network named DC. The domain controller's NIC IP address is set to static 
+</p>
+<br />
