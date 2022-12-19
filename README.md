@@ -73,4 +73,6 @@ Open Active Directory Users and Computers through the tools tab in the top right
 <p>
 <h2>5. Joining our User PC to the domain</h2>
 
-First we must set the users DNS settings to the DC's private IP. We do this in the VM's VNIC on Azure. We must configure the DC as our DNS because the domain we are using is not a real public domain, only the DC knows of it's existence. Once done we login and edit the system domain to testdomain.com and sign in with our John Doe admin account. After completion we must restart the VM. Our user PC is now succesfully a member of the domain. 
+First we must set the users DNS settings to the DC's private IP. We do this in the VM's VNIC on Azure. We must configure the DC as our DNS because the domain we are using is not a real public domain, only the DC knows of it's existence. Once done we login and edit the system domain to testdomain.com and sign in with our John Doe admin account. After completion we must restart the VM. Our user PC is now succesfully a member of the domain. Going back into Active Directory we can see all of the user accounts we currently have. John is not in here because he is in the admin group. 
+
+We are able to create employee accounts, admin accounts, all with the ability to login to the same User PC. Similar to a situation at school or work where multiple people are able to sign into the same PC. 
