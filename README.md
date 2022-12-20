@@ -83,4 +83,4 @@ We now are able to create employee accounts, admin accounts, all with the abilit
 <p>
 <h2>6. Using a Python script to add users</h2>
 
-As an exmaple, we can use a python script to create users in our DC. 
+As an example, we can use a python script to create users in our DC. 
