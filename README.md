@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <h2>1. Setting up the VM's in Azure</h2>
   
-First, we create 2 azure Virtual Machines: The Domain Controller and the User. For the domain controller use Windows Server 2022 image, and for the user use Windows 10 image. Both of the VM's are put in the same virtual network named DC. The domain controller's NIC IP address is set to static 
+First, we create 2 Azure Virtual Machines: The Domain Controller and the User. For the domain controller use Windows Server 2022 image, and for the user use Windows 10 image. Both of the VM's are put in the same virtual network named DC. The domain controller's NIC IP address is set to static 
 </p>
 <br />
 
@@ -42,7 +42,7 @@ First, we create 2 azure Virtual Machines: The Domain Controller and the User. F
 <p>
 <h2>2. Ensuring Connectivity between the Client and Domain Controller</h2>
 
-To check connectivity simply ping the DC's private IP. By default, Windows Server has echo requests from ICMPv4 blocked in the firewall, meaning the pings are going to drop. To change this we use RDP to open the DC's VM and change these settings in the windows firewall. Now when we ping the DC's private IP we see responses ensuring our connect is good. 
+To check connectivity simply ping the DC's private IP. By default, Windows Server has echo requests from ICMPv4 blocked in the firewall, meaning the pings are going to drop. To change this we use RDP to open the DC's VM and change these settings in the windows firewall. Now when we ping the DC's private IP we see responses ensuring our connection is good. 
 </p>
 <br />
 
@@ -53,7 +53,7 @@ To check connectivity simply ping the DC's private IP. By default, Windows Serve
 <h2>3. Installing Active Directory on the DC</h2>
 
 Open server manager on the DC (comes default on Windows Server). Head to add roles and features too add Windows Domain Controller. From here we head to the 
-flag in the top right to continue configuring the domain. The domain I set is testdomain.com, this is private so it can be set to anything. After going through the installation process the VM must be restarted. Now that it is a domain controller, we must login with the context of the domain (FQD). 
+flag in the top right to continue configuring the domain. The domain I set is testdomain.com, this is private so it can be set to anything. After going through the installation process the VM must be restarted. Now that it is a domain controller, we must login with the context of the domain (FQDN). 
 </p>
 <br />
 
@@ -63,7 +63,7 @@ flag in the top right to continue configuring the domain. The domain I set is te
 <p>
 <h2>4. Creating Admins and Users in Active Directory</h2>
 
-Open Active Directory Users and Computers through the tools tab in the top right of the server manager. We can now create some users and admins for our domain. To create a group, right click and in the drop down select add an organizational unit. The first one will be Admins and the second one will be Employees. Once created head to the admin folder, right click, and select add user. We will create a dummy admind user and name him john doe. Under his properties, go to the members of tab and put him in the admin group. Our John Doe is now an admin of our domain with the ability to create user accounts and more. We are now able to login as John Doe.
+Open Active Directory Users and Computers through the tools tab in the top right of the server manager. We can now create some users and admins for our domain. To create a group, right click and in the drop down select add an organizational unit. The first one will be Admins and the second one will be Employees. Once created head to the admin folder, right click, and select add user. We will create a dummy admin user and name him John Doe. Under his properties, go to the members of tab and put him in the admin group. Our John Doe is now an admin of our domain with the ability to create user accounts and more. We are also able to login using John Doe's credentials.
 </p>
 <br />
 
@@ -73,9 +73,9 @@ Open Active Directory Users and Computers through the tools tab in the top right
 <p>
 <h2>5. Joining our User PC to the domain</h2>
 
-First we must set the users DNS settings to the DC's private IP. We do this in the VM's VNIC on Azure. We must configure the DC as our DNS because the domain we are using is not a public domain, only the DC knows of its existence. Once done login and edit the system domain to testdomain.com and sign in with our John Doe admin account. After completion we must restart the VM. Our user PC is now succesfully a member of the domain. Going back into Active Directory we can see all of the user accounts we currently have. (John is not in here because he is in the admin group. If he is added to the users group he will be in here) 
+First we must set the User PC's DNS settings to the DC's private IP. We do this in the VM's VNIC on Azure. We must configure the DC as our DNS because the domain we are using is not a public domain, only the DC knows of its existence. Once done login and edit the system domain to testdomain.com and sign in with our John Doe admin account. After completion we must restart the VM. Our user PC is now succesfully a member of the domain. Going back into Active Directory we can see all of the user accounts we currently have. (John is not in here because he is in the admin group. If he is added to the users group he will be in here) 
 
-We now are able to create employee accounts, admin accounts, all with the ability to login to the same User PC. Similar to a situation at school or work where multiple people are able to sign into the same PC. 
+We now are able to create employee and admin accounts, all with the ability to login to the same User PC. Similar to a situation at school or work where multiple people are able to sign into the same PC. 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
