@@ -83,4 +83,8 @@ We now are able to create employee accounts, admin accounts, all with the abilit
 <p>
 <h2>6. Using a Python script to add users</h2>
 
-As an example, we can use a python script to create users in our DC. This script from github creates as many Users as inputed, and sets the passwords of them all to "Password1". 
+As an example, we can use a python script to create users in our DC. This script from github creates user accounts and inputs them into our DC. For testing purposes I tell it to create 10,000 users and set the password to "Password1" on all of them. The usernames are generated randomly in an algorithm within the script. 
+
+We can choose anyone of the created users and input their credentials to login to the User PC. 
+</p>
+<br />
