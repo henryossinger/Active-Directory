@@ -68,8 +68,8 @@ Open Active Directory Users and Computers through the tools tab in the top right
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="50%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <h2>5. Joining our User PC to the domain</h2>
