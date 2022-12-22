@@ -81,7 +81,7 @@ First we must set the User VM's DNS settings to the DC's private IP. We do this 
 We now are able to create employee and admin accounts, all with the ability to login to the same User PC. Similar to a situation at school or work where multiple people are able to sign into the same PC. 
 
 <p>
-<img src="https://imgur.com/olgPx1k.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/olgPx1k.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <h2>6. Using a Python script to add users</h2>
