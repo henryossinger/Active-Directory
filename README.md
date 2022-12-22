@@ -65,7 +65,7 @@ flag in the top right to continue configuring the domain. The domain I set is te
 <p>
 <h2>4. Creating Admins and Users in Active Directory</h2>
 
-Open Active Directory Users and Computers through the tools tab in the top right of the server manager. We can now create some users and admins for our domain. To create a group, right click and in the drop down select add an organizational unit. The first one will be Admins and the second one will be Employees. Once created head to the admin folder, right click, and select add user. We will create a dummy admin user and name him John Doe. Under his properties, go to the members of tab and put him in the admin group. Our John Doe is now an admin of our domain with the ability to create user accounts and more. We are also able to login using John Doe's credentials.
+Open Active Directory Users and Computers through the tools tab in the top right of the server manager. We can now create some users and admins for our domain. To create a group, right click and in the drop down select add an organizational unit. The first one will be Admins and the second one will be Employees. Once created head to the admin folder, right click, and select add user. We will create a dummy admin user and name him John Doe. Under his properties, go to the members of tab and put him in the admin group. Our John Doe is now an admin of our domain with the ability to create user accounts and more. We can also login to the User computer using John Doe's credentials.
 </p>
 <br />
 
