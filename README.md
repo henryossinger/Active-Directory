@@ -59,7 +59,8 @@ flag in the top right to continue configuring the domain. The domain I set is te
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>  
 </p>
 <p>
 <h2>4. Creating Admins and Users in Active Directory</h2>
