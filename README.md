@@ -38,7 +38,7 @@ First, we create 2 Azure Virtual Machines: The Domain Controller and the User. F
 <br />
 
 <p> 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/zC3PyH9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <h2>2. Ensuring Connectivity between the Client and Domain Controller</h2>
