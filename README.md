@@ -28,7 +28,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p>
 <img src="https://imgur.com/xf441SI.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
-<img src="https://imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/N7nOA2Y.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 <h2>1. Setting up the VM's in Azure</h2>
