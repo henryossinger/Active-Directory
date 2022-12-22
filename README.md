@@ -80,8 +80,6 @@ First we must set the User PC's DNS settings to the DC's private IP. We do this 
 
 We now are able to create employee and admin accounts, all with the ability to login to the same User PC. Similar to a situation at school or work where multiple people are able to sign into the same PC. 
 
-Extremely basic rundown of how Active Directory and DC's operate, none the less a fun experience. 
-
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="40%" width="40%" alt="Disk Sanitization Steps"/>
 </p>
