@@ -76,7 +76,7 @@ Open Active Directory Users and Computers through the tools tab in the top right
 <p>
 <h2>5. Joining our User PC to the domain</h2>
 
-First we must set the User PC's DNS settings to the DC's private IP. We do this in the VM's VNIC on Azure. We must configure the DC as our DNS because the domain we are using is not a public domain, only the DC knows of its existence. Once done login and edit the system domain to testdomain.com and sign in with our John Doe admin account. After completion we must restart the VM. Our user PC is now succesfully a member of the domain. Going back into Active Directory we can see all of the user accounts we currently have. (John is not in here because he is in the admin group) 
+First we must set the User VM's DNS settings to the DC's private IP. We do this in the VM's VNIC on Azure. We must configure the DC as our DNS because the domain we are using is not a public domain, only the DC knows of its existence. Once done login and edit the system domain to testdomain.com and sign in with our John Doe admin account. After completion we must restart the VM. Our user PC is now succesfully a member of the domain. Going back into Active Directory we can see all of the user accounts we currently have. (John is not in here because he is in the admin group) 
 
 We now are able to create employee and admin accounts, all with the ability to login to the same User PC. Similar to a situation at school or work where multiple people are able to sign into the same PC. 
 
@@ -88,6 +88,6 @@ We now are able to create employee and admin accounts, all with the ability to l
 
 As an example, we can use a python script to create users in our DC. This script from github creates user accounts and inputs them into our DC. For testing purposes I tell it to create 10,000 users and set the password to "Password1" on all of them. The usernames are generated randomly in an algorithm within the script. 
 
-We can choose anyone of the created users and input their credentials to login to the User PC. 
+We can choose anyone of the created users and input their credentials to login to the User VM. 
 </p>
 <br />
