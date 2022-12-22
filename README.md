@@ -33,7 +33,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
 <h2>1. Setting up the VM's in Azure</h2>
   
-First, we create 2 Azure Virtual Machines: The Domain Controller and the User. For the domain controller use Windows Server 2022 image, and for the user use Windows 10 image. Both of the VM's are put in the same virtual network named DC. The domain controller's NIC IP address is set to static 
+First, we create 2 Azure Virtual Machines: The Domain Controller and the User. For the domain controller use Windows Server 2022 image, and for the user use Windows 10 image. Both of the VM's are put in the same virtual network named AD. The domain controller's private IP address is set to static 
 </p>
 <br />
 
