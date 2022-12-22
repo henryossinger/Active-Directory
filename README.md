@@ -59,7 +59,7 @@ flag in the top right to continue configuring the domain. The domain I set is te
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/eQI4gd9.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="40%" alt="Disk Sanitization Steps"/>  
 </p>
 <p>
